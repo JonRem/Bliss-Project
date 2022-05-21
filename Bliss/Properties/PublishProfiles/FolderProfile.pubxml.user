@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\inetpub\wwwroot\Rocky</_PublishTargetUrl>
+    <History>True|2021-09-28T02:43:23.5888506Z;False|2021-09-28T10:41:38.2208243+08:00;False|2021-09-28T10:40:03.9157807+08:00;True|2021-09-28T10:23:19.9166014+08:00;True|2021-09-28T10:16:10.5363461+08:00;True|2021-09-28T09:55:30.5387938+08:00;True|2021-09-27T11:58:31.9020536+08:00;False|2021-09-27T11:53:34.9472023+08:00;False|2021-09-27T11:50:37.5339910+08:00;False|2021-09-27T11:46:36.7897540+08:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=KAL-EL%3bInitial Catalog=Rocky%3bIntegrated Security=True%3bMultipleActiveResultSets=True</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>
