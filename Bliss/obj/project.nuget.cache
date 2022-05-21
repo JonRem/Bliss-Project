@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Hcc/BeoIRK3ZkKFMpYtga5pOpD7PQWoIq2/ZGniveRKJ4KoMG79b7r2ZuxK1GRc1t7jvMlexly6OPcU3NyWXoA==",
+  "dgSpecHash": "pz9JuEUXxadFfpyEESM6DvEC+ASquAOtOhK+kpcdJqoJ45zLI/IeOI5XV3/O2dTd6Y0GieYZwkbDDjj8ISEodw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jrem7_000\\Documents\\Dotnet-Core-MVC\\Bliss Project\\Bliss\\Bliss.csproj",
+  "projectFilePath": "C:\\Users\\jrem7_000\\Documents\\Dotnet-Core-MVC\\Biss Project\\Bliss\\Bliss.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jrem7_000\\.nuget\\packages\\braintree\\5.9.0\\braintree.5.9.0.nupkg.sha512",
     "C:\\Users\\jrem7_000\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
