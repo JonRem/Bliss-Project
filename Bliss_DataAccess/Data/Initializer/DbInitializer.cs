@@ -33,7 +33,7 @@ namespace Bliss_DataAccess.Data.Initializer
             }
             catch(Exception ex)
             {
-
+                Console.WriteLine("{0} Exception caught.", ex.Message);
             }
 
 
