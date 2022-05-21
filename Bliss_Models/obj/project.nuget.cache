@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mx8uk8mVk888lv0iYwuG63tRUd0ExItFXpE8DHtjanWdqF2fV4PAyvciBCjlaUwFNJhQDM5og0QPECss8ZAdmA==",
+  "dgSpecHash": "lIPFfhaYeYeW1jll/RBtZbNR5NCTPTHIYPiMylu1oUJxZkOUZAqyDExh1CuV3FK2ZorFq9HNswlq4WZ9uxnWlQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jrem7_000\\Documents\\Dotnet-Core-MVC\\Bliss Project\\Bliss_Models\\Bliss_Models.csproj",
+  "projectFilePath": "C:\\Users\\jrem7_000\\Documents\\Dotnet-Core-MVC\\Biss Project\\Bliss_Models\\Bliss_Models.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jrem7_000\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "C:\\Users\\jrem7_000\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
