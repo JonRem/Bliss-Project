@@ -54,7 +54,7 @@ namespace Bliss_Utility
           email
          }, {
           "Name",
-          "DotNetMastery"
+          "Bliss Store"
          }
         }
        }

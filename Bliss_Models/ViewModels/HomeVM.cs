@@ -9,5 +9,7 @@ namespace Bliss_Models.ViewModels
     {
         public IEnumerable<Product> Products { get; set; }
         public IEnumerable<Category> Categories { get; set; }
+
+        public string SearchProduct { get; set; }
     }
 }

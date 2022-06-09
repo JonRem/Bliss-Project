@@ -13,10 +13,14 @@ namespace Bliss_DataAccess.Repository
     public class ProductRepository : Repository<Product>, IProductRepository
     {
         private readonly ApplicationDbContext _db;
+        private List<Product> ProductList { get; set; }
+
         public ProductRepository(ApplicationDbContext db) : base(db)
         {
             _db = db;
         }
+
+
 
         public IEnumerable<SelectListItem> GetAllDropdownList(string obj)
         {
@@ -37,6 +41,25 @@ namespace Bliss_DataAccess.Repository
                 });
             }
             return null;
+        }
+
+        public IEnumerable<Product> Search(string searchProduct)
+        {
+
+            //ProductList = IEnumerable < Product > GetAll(includeProperties: "Category,ApplicationType");
+
+            
+
+
+            if (string.IsNullOrEmpty(searchProduct))
+            {
+                return ProductList;
+            }
+
+            return ProductList.Where(u => u.Name.Contains(searchProduct) ||
+                    u.Name.Contains(searchProduct));
+            
+            // throw new NotImplementedException();
         }
 
         public void Update(Product obj)

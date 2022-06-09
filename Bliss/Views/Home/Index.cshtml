@@ -1,23 +1,46 @@
 ﻿@model Bliss_Models.ViewModels.HomeVM
 
 <div class="container">
-    <div class="text-center">
-        <button class="btn btn-dark filter-button" data-filter="all">All</button>
-        @foreach (var obj in Model.Categories)
+    @*Debugging this portion for the search box in home page  *@
+    @*<div class="text-center">*@
+    <form method="post" asp-action="FindProduct">
+        <div class="input-group">
+            <input class="form-control" asp-controller="Home" asp-for="SearchProduct" />
+            <div class="input-group-append">
+                <button type="submit" class="=btn btn-primary">Search</button>
+            </div>
+        </div>
+    </form>
+        @*<input asp-action="SearchProduct" id="searchBox" type="text" name="searchString" placeholder="Search.."/>*@
+        @*<button class="btn  btn-primary filter-button" data-filter="Stone">Search</button>*@
+
+        @* </div> *@
+
+        <div class="text-center">
+            <button class="btn btn-dark filter-button" data-filter="all">All</button>
+            @foreach (var obj in Model.Categories)
             {
                 <button class="btn-outline-secondary filter-button" data-filter="@obj.Name.Replace(' ','_')">
                     @obj.Name
                 </button>
             }
-    </div>
-    <br />
-    <div class="row">
-        @foreach(var prod in Model.Products)
+        </div>
+        <br />
+        <div class="row">
+            @if (Model.Products.Count() > 0)
             {
-                <partial name ="_IndividualProductCard" model="prod" />
-                //display all product
+                @foreach (var prod in Model.Products)
+                {
+                    <partial name="_IndividualProductCard" model="prod" />
+                    //display all product
+                }
             }
-    </div>
+            else
+            {
+                <p> No Product found for search criteria.</p>
+            }
+        </div>
+    
 </div>
 
 @section Scripts{ 
@@ -25,7 +48,6 @@
     $(document).ready(function(){
 
     $(".filter-button").click(function(){
-
         var value = $(this).attr('data-filter');
         if(value == "all")
         {
