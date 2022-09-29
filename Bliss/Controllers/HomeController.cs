@@ -77,7 +77,40 @@ namespace Bliss.Controllers
             //return RedirectToAction(nameof(Index));
 
         }
-        
+
+        [HttpPost]
+
+        [ValidateAntiForgeryToken]
+
+        public IActionResult FindCategory(string SearchCategory)
+        {
+
+            if (string.IsNullOrEmpty(SearchCategory))
+            {
+                HomeVM homeVM = new HomeVM()
+                {
+                    Products = _prodRepo.GetAll(includeProperties: "Category,ApplicationType"),
+                    Categories = _catRepo.GetAll()
+                };
+                return View("Index", homeVM);
+            }
+            else
+            {
+                HomeVM homeVM = new HomeVM()
+                {
+                    // old code ==> Products = _db.Product.Include(u => u.Category).Include(u => u.ApplicationType),
+                    Products = _prodRepo.GetAll(u => u.Category.Name.Contains(SearchCategory),
+                        includeProperties: "Category,ApplicationType"),
+
+                    //Products = _prodRepo.Search(SearchProduct),
+                    Categories = _catRepo.GetAll()
+                };
+                //SearchProduct = "";
+                return View("Index", homeVM);
+            }
+            //return RedirectToAction(nameof(Index));
+
+        }
 
         public IActionResult Details(int id)
         {

@@ -11,5 +11,6 @@ namespace Bliss_Models.ViewModels
         public IEnumerable<Category> Categories { get; set; }
 
         public string SearchProduct { get; set; }
+        public string SearchCategory { get; set; }
     }
 }
